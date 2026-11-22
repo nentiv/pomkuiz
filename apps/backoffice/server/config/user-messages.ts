@@ -1,0 +1,43 @@
+const ISSUE_MESSAGES = Object.freeze({
+  singleNeedsOneCorrect: "Réponse unique attendue, mais {count} bonne(s) réponse(s) cochée(s).",
+  multipleNeedsCorrect: "Aucune bonne réponse cochée.",
+  tooFewChoices: "Moins de {minimum} propositions.",
+  emptyPrompt: "Énoncé vide.",
+  statementMismatch: "Bonnes réponses différentes de la correction Moodle : « {statement} ».",
+  missingStatement: "Correction Moodle introuvable : bonnes réponses déduites des marques visuelles.",
+  mergedAcrossSegments: "Question reconstituée sur {count} segments : vérifier la jonction.",
+  orphanContinuation: "Début de question manquant dans le segment précédent.",
+  lowConfidence: "Lecture incertaine signalée par le modèle.",
+  duplicateLabel: "Proposition « {label} » en double.",
+  invalidFormula: "Formule LaTeX invalide : « {formula} ».",
+  figureNotSnapped: "Figure recadrée d'après la position estimée : vérifier le cadrage.",
+  figureTargetUnknown: "Figure rattachée à une proposition inconnue « {target} » : placée dans l'énoncé.",
+});
+
+const ERROR_MESSAGES = Object.freeze({
+  invalidRequest: "Requête invalide.",
+  notFound: "Ressource introuvable.",
+  conflict: "Conflit : la ressource a changé entre-temps.",
+  forbidden: "Accès refusé.",
+  payloadTooLarge: "Fichier trop volumineux.",
+  unsupportedMedia: "Type de fichier non pris en charge.",
+  invalidPdf: "PDF invalide ou illisible.",
+  encryptedPdf: "PDF protégé par mot de passe.",
+  tooManyPages: "Trop de pages dans le PDF.",
+  invalidImage: "Image invalide.",
+  claudeMissing: "Commande claude introuvable. Définissez POMKUIZ_CLAUDE_PATH.",
+  claudeSignedOut: "Claude n'est pas connecté : lancez « claude auth login ».",
+  claudeRateLimited: "Limite d'usage Claude atteinte : reprenez l'import plus tard.",
+  claudeTimeout: "Claude n'a pas répondu à temps.",
+  claudeFailed: "Échec de l'appel à Claude.",
+  claudeInvalidOutput: "Réponse de Claude invalide.",
+  cancelled: "Opération annulée.",
+  jobRunning: "Un traitement est déjà en cours pour cet import.",
+  jobNotReady: "L'extraction n'est pas terminée.",
+  exportBlocked: "Des questions sont encore « à revoir ».",
+  exportExists: "Un QCM avec cet identifiant existe déjà.",
+  exportInvalid: "Le QCM exporté ne respecte pas le schéma.",
+  unexpected: "Erreur inattendue.",
+});
+
+export { ISSUE_MESSAGES, ERROR_MESSAGES };

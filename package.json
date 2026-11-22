@@ -1,0 +1,29 @@
+{
+  "name": "pomkuiz",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "back": "npm --workspace @pomkuiz/backoffice start",
+    "front": "npm --workspace @pomkuiz/site run dev",
+    "deploy": "node scripts/deploy-site.mjs",
+    "prepare": "node scripts/install-git-hooks.mjs"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "2.10.6",
+    "@types/node": "26.6.6",
+    "jsdom": "31.0.0",
+    "oxlint": "1.92.0",
+    "prettier": "3.9.10",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.1"
+  }
+}

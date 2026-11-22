@@ -1,0 +1,27 @@
+{
+  "name": "@pomkuiz/design-system",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": [
+    "*.css",
+    "./src/design/load-design-system.ts"
+  ],
+  "exports": {
+    ".": "./src/design-system.ts",
+    "./icons": "./src/ui/icons.ts",
+    "./load-design-system": "./src/design/load-design-system.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "5.3.0",
+    "@pomkuiz/quiz-contract": "0.1.0",
+    "katex": "0.19.1",
+    "lucide-preact": "1.69.0"
+  },
+  "peerDependencies": {
+    "preact": "11.2.0"
+  }
+}

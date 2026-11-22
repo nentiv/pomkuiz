@@ -1,0 +1,95 @@
+.card {
+  position: relative;
+  display: block;
+  border: var(--border) solid var(--line);
+  border-radius: var(--radius-lg);
+  color: inherit;
+  text-decoration: none;
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--saturate));
+  backdrop-filter: blur(var(--blur)) saturate(var(--saturate));
+}
+
+.card-pad-sm {
+  padding: var(--space-4);
+}
+
+.card-pad-md {
+  padding: var(--space-5);
+}
+
+.card-pad-lg {
+  padding: var(--space-6);
+}
+
+.card-glass {
+  background: var(--surface);
+}
+
+.card-pastel {
+  border-color: color-mix(in srgb, var(--accent) 16%, var(--line));
+  background:
+    linear-gradient(
+      120deg,
+      color-mix(in srgb, var(--blob-1) 75%, transparent),
+      color-mix(in srgb, var(--blob-2) 45%, transparent) 55%,
+      color-mix(in srgb, var(--blob-3) 75%, transparent)
+    ),
+    var(--surface-muted);
+}
+
+.card-tinted {
+  border-color: color-mix(in srgb, var(--tone) 20%, var(--line));
+  background: color-mix(in srgb, var(--tone-soft) 78%, transparent);
+}
+
+.card-interactive {
+  cursor: pointer;
+  transition:
+    background var(--duration) var(--ease),
+    border-color var(--duration) var(--ease),
+    transform var(--duration) var(--ease);
+}
+
+.card-interactive:hover {
+  border-color: var(--line-strong);
+}
+
+.card-glass.card-interactive:hover {
+  background: var(--surface-strong);
+}
+
+.card-tinted.card-interactive:hover {
+  background: var(--tone-soft);
+}
+
+.card-interactive:active {
+  transform: scale(0.995);
+}
+
+@media (max-width: 480px) {
+  .card-pad-md {
+    padding: var(--space-4);
+  }
+
+  .card-pad-lg {
+    padding: var(--space-5);
+  }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .card-glass {
+    background: var(--surface-strong);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .card {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .card-glass,
+  .card-pastel {
+    background: var(--bg);
+  }
+}

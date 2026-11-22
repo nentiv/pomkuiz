@@ -1,0 +1,17 @@
+{
+  "name": "@pomkuiz/quiz-contract",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/quiz-contract.ts",
+    "./schemas": "./src/contract-schemas.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "katex": "0.19.1"
+  }
+}

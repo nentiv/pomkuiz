@@ -1,0 +1,19 @@
+.figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.figure {
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  background: light-dark(#ffffff, #f4f5f8);
+  border: var(--border) solid var(--line);
+}
+
+.figure img {
+  display: block;
+  width: auto;
+  max-height: var(--figure-max-height);
+  border-radius: var(--radius-sm);
+}

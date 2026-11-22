@@ -1,0 +1,109 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: var(--tap);
+  padding: 0 var(--space-5);
+  border: var(--border) solid transparent;
+  border-radius: var(--radius-pill);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background var(--duration-fast) var(--ease),
+    border-color var(--duration-fast) var(--ease),
+    color var(--duration-fast) var(--ease),
+    transform var(--duration-fast) var(--ease);
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-sm {
+  min-height: var(--tap-sm);
+  padding: 0 var(--space-4);
+  font-size: var(--text-xs);
+}
+
+.btn-lg {
+  min-height: var(--tap-lg);
+  padding: 0 var(--space-6);
+  font-size: var(--text-md);
+}
+
+.btn-icon-only {
+  padding: 0;
+  width: var(--tap);
+}
+
+.btn-sm.btn-icon-only {
+  width: var(--tap-sm);
+}
+
+.btn-lg.btn-icon-only {
+  width: var(--tap-lg);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-primary {
+  background: var(--accent-strong);
+  color: var(--accent-ink);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--accent-strong), var(--accent) 16%);
+}
+
+.btn-secondary {
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--ink);
+  -webkit-backdrop-filter: blur(var(--blur));
+  backdrop-filter: blur(var(--blur));
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: var(--surface-strong);
+  border-color: var(--line-strong);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink-muted);
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background: var(--surface-muted);
+  color: var(--ink);
+}
+
+.btn-danger {
+  background: transparent;
+  color: var(--low);
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: var(--low-soft);
+}
+
+.btn-trailing {
+  transition: transform var(--duration) var(--ease);
+}
+
+.btn:hover:not(:disabled) .btn-trailing {
+  transform: translateX(3px);
+}

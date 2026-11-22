@@ -1,0 +1,24 @@
+.tone-neutral {
+  --tone: var(--ink);
+  --tone-soft: var(--surface);
+}
+
+.tone-accent {
+  --tone: var(--accent);
+  --tone-soft: var(--accent-soft);
+}
+
+.tone-low {
+  --tone: var(--low);
+  --tone-soft: var(--low-soft);
+}
+
+.tone-medium {
+  --tone: var(--medium);
+  --tone-soft: var(--medium-soft);
+}
+
+.tone-high {
+  --tone: var(--high);
+  --tone-soft: var(--high-soft);
+}

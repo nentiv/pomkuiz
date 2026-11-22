@@ -1,0 +1,1323 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-09-21-colle-d-ue3",
+  "title": "2026-09-21 Colle d'UE3",
+  "updatedAt": "2026-11-21",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "prompt": "A propos des acides aminés protéinogènes:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il en existe 40",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Certains sont précurseurs de neuromédiateurs",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Certains sont des neuromédiateurs",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "S’assemblent par des liaisons peptidique (non covalentes)",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "L’ornithine et la citrulline en font parti",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "prompt": "Parmi ces acides aminés, lequel/lesquels sont essentiels ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tyrosine",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Valine",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Thréonine",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Proline",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Methionine",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple",
+      "prompt": "A propos de l’acide aminé histidine",
+      "choices": [
+        {
+          "id": "a",
+          "text": "il est un acide aminé protéinogène",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Sous l’action d’une histidine décarboxylase, on obtient la sérotonine",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "il absorbe dans les UV",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "il est un acide aminé polaire à fonction basique",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "il précurseur de la famille des catécholamines",
+          "correct": false,
+          "explanation": "précurseur de l’histamine"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "prompt": "Les caractéristiques des acides aminés",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le tryptophane a un noyau indole",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "le rôle métabolique de l’alanine est pratiquement le même que la glutamine",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "le transport et l’élimination de l’azote c’est glutamine/ alanine/ ornithine/ cystéine",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "la cystine est importante dans la structure et la stabilité des protéines",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "tyrosine et isoleucine ont un 2e carbone chiral",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple",
+      "prompt": "Parmis ces affirmations cochez la/les bonne/s réponse/s",
+      "choices": [
+        {
+          "id": "a",
+          "text": "L’alanine et la citruline participent au cycle de l’urée",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "La glutamine est l’AA le plus abondant dans le sang",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "La sérine est une protéine à fonction alcool",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Tous les AA naturels trouvés dans les molécules du vivant sont de série L",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "La charge de l’AA varie en fonction de sa taille",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "prompt": "Parmis ces affirmations cochez la/les bonne/s réponse/s",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les AA essentiels sont produit par notre organisme en grande quantité",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "La tyrosine et la cystéine sont des AA semi-essentiels, la tyrosine à partir de la méthionine et cystéine à partir de la phénylalanine.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "L’arginine est un AA parfois essentiel avec l’histidine",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "La chaîne latérale des AA va avoir une influence sur la solubilité dans l’eau",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Les groupements OH de la tyr, ser et thr peuvent être cible de modifications post traductionnelles",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple",
+      "prompt": "Parmi ces propositions cochez celle(s) qui est(sont) vraie(s):",
+      "choices": [
+        {
+          "id": "a",
+          "text": "La cystéine est obtenue par formation d’un pont disulfure entre 2 cystines.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "L'apolarité se définit entre autre par une compensation des moments dipolaires.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Un acide aminé est constitué d’un seul carbone asymétrique toujours entouré d’une fonction amine primaire, d’une fonction acide carboxylique, d’un hydrogène et d’un radical variable.",
+          "correct": false,
+          "explanation": "parce que le C3 de la thréonine est aussi asymétrique donc un a.a n’est pas forcément composé d’UN C*,"
+        },
+        {
+          "id": "d",
+          "text": "Les acides aminés possèdent chacun au moins 2 isomères.",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Une configuration L ou S permet de déterminer le pouvoir rotatoire lévogyre, de même ,une configuration D ou R permet de déterminer un pouvoir rotatoire dextrogyre.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple",
+      "prompt": "Les réactions de transaminations :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Permettent d’obtenir un acide alpha cétonique à partir d’un acide aminé",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Permettent d’obtenir un acide aminé à partir d’un acide alpha cétonique",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Les deux grandes aminotransférases sont ASAT et ALAT",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Font intervenir des décarboxylases",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Font intervenir des déshydrogénases",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "prompt": "Indiquer la ou les molécule(s) qui dérive(nt) de l’acide aminé suivant :",
+      "images": [
+        "assets/q9-1.png"
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "text": "Sérotonine",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Adrénaline",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Histamine",
+          "correct": false,
+          "explanation": "Histamine : dérive de l'histidine"
+        },
+        {
+          "id": "d",
+          "text": "Mélanine",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Mélatonine",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "multiple",
+      "prompt": "Parmi ces propositions cochez celle(s) qui est(sont) vraie(s):",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le protéome est l’étude de l’expression génique",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "L’homme possède environ 23 000 gènes",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Les protéines peuvent donner une apparence différente même si les deux êtres possèdent le même génome",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "L’insuline subit des modification pré traductionnelles",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Les ponts disulfures stabilise la structure tridimensionnelle",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "type": "multiple",
+      "prompt": "Parmi ces propositions, cochez la/les fausse/s :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les hétéroprotéines ne sont constituées que d’acides aminés",
+          "correct": true,
+          "explanation": "les holoprotéines ne sont constituées que d’aa"
+        },
+        {
+          "id": "b",
+          "text": "La liaison peptidique est très mobile",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Le H et le O sont généralement en position trans par rapport à la liaison C-N",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "La liaison peptidique est une liaison amide",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Par convention, on écrit un peptide de son extrémité C-term vers N-term",
+          "correct": true,
+          "explanation": "l’inverse, de N-term vers C-term"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "multiple",
+      "prompt": "Cochez les réponses correctes:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le pont disulfure est une modification post-transcriptionnelle",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "La glycosylation est une modification post-transcriptionnelle",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "La glycosylation est catalysée par une glycosyltransférase",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Il existe la O glycosylation sur la Sérine ou Thréonine",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Il existe la N glycosylation sur Alanine ou Glutamine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "type": "multiple",
+      "prompt": "Parmi ces propositions, cochez la/les réponses vraies :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "L’ocytocine est un pentapeptide et c’est un puissant vasodilatateur",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "La Leu-enképhaline est un peptide qui se termine par une méthionine.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "La bradykinine a un rôle de morphine endogène.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Les enképhalines ont un rôle de morphine endogène !!",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "L’ocytocine a un rôle dans la lactation et à l’accouchement.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "type": "multiple",
+      "prompt": "On considère le peptide suivant :\nLys-Asp-Glu-Leu\nSachant que :\n$$\\begin{array}{l|cccc} & \\text{LYS} & \\text{ASP} & \\text{GLU} & \\text{LEU} \\\\ \\hline \\text{pKa1} & 2{,}2 & 1{,}9 & 2{,}2 & 2{,}4 \\\\ \\text{pKa2} & 9 & 9{,}6 & 9{,}7 & 9{,}6 \\\\ \\text{pKa3} & 10{,}5 & 3{,}9 & 4{,}2 & / \\end{array}$$",
+      "choices": [
+        {
+          "id": "a",
+          "text": "L’utilisation de bromure de cyanogène permet d’obtenir deux dipeptides.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Le pHi du peptide : 5,7.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Le pHi du peptide : 4,05",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Le pHi du peptide : 6,6.",
+          "correct": false,
+          "explanation": "Après tableau des charges, on observe que le peptide est neutre entre 3,9 et 4,2. (3,9+4,2)/2 : 4,05."
+        },
+        {
+          "id": "e",
+          "text": "À pH : 5, le peptide migre vers l’anode.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "type": "multiple",
+      "prompt": "À propos des structures des protéines, cochez le(s) item(s) vrai(s).",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les structures secondaires se stabilisent grâce à des liaisons H.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "La fibroïne de soie a comme structure secondaire l’hélice alpha.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Les liaisons H et les ponts SS sont des liaisons covalentes.",
+          "correct": false,
+          "explanation": "Les liaisons H sont des liaisons faibles donc non covalentes"
+        },
+        {
+          "id": "d",
+          "text": "Un polymère est fait de l’assemblage de plusieurs SU protéiques en nombre limité.",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Si je mets de l’urée sur ma protéine, les liaisons non covalentes se rompent.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "type": "multiple",
+      "prompt": "Concernant les maladies neuro dégénératives:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les personnes saines ont la protéine prion cellulaire PRPsc",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Chez les personnes atteint d’alzheimer, c’est L’APP soluble qui s’accumule",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Chez les personnes atteint de la maladie de creutzfeldt- Jacob, c’est L’APP soluble qui s’accumule",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "C’est les personnes saines qui ont l’APP soluble",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Aucune des réponses sont bonnes, les protéines ne sont pas responsables de maladie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "type": "multiple",
+      "prompt": "Concernant les différents types de protéines",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les protéines fibreuses sont aussi appelées scléroprotéines",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Non pas du tout, elles s’appellent sphèroprotéines",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Les protéines membranaires ont un rôle dans la signalisation",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Les protéines fibreuses ont un rôle structural",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Les protéines fibreuses et membranaires sont solubles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "type": "multiple",
+      "prompt": "On souhaite connaître la quantité totale de protéines présente dans un échantillon. Quelle technique est la plus adaptée ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "La méthode de Bradford",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "ELISA sandwich",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Le Western blot",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "L’électrophorèse bidimensionnelle",
+          "correct": false,
+          "explanation": "séparation des prot selon l’amasse et la charge"
+        },
+        {
+          "id": "e",
+          "text": "Tu m’as saoulé avec tes prot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "type": "multiple",
+      "prompt": "Parmi les propositions suivantes la(les) quelle(s) est (sont) vraie(s)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Dans une hélice alpha la chaîne peptidique tourne vers la gauche",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Dans une protéine il y a soit des hélices alpha, soit des hélices bêta",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "La structure tertiaire est stabilisée par des liaisons faibles.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "L’hexokinase est une scléroprotéine soluble",
+          "correct": false,
+          "explanation": "est une spheroproteine"
+        },
+        {
+          "id": "e",
+          "text": "La ribonucléase pancréatique mise en présence de $\\beta$-mercaptoéthanol et d’urée puis replacée dans un milieu sans cette enzyme, n’a plus d’activité biologique.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "type": "multiple",
+      "prompt": "Parmi les propositions suivantes la(les) quelle(s) est (sont) vraie(s)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Un glucide peut être porteur d’un groupement carboxyle",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Les cétoses sont des oligosides",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Un ose peut avoir à la fois une fonction aldéhyde et une fonction cétone",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Les glucides sont des constituants de molécules fondamentales (ex: coenzymes)",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Certains glucides sont synthétisées à partir du glucose dans l’organisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q21",
+      "type": "multiple",
+      "prompt": "Concernant les molécules suivantes :",
+      "images": [
+        "assets/q21-1.png"
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "text": "Ce sont toutes les deux des oses D, dextrogyres.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "A et B sont des aldoses.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "A et B sont des isomères.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "A et B sont des diastéréoisomères.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "A et B sont des épimères.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "type": "multiple",
+      "prompt": "Parmi les propositions suivantes, laquelle/lesquelles est/sont correctes ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le saccharose est un diholoside non-réducteur",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Le glycogène et l’amidon sont des molécules de stockage du glucose",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "L’absence d’alpha-glucosidase empêche l’Homme de digérer la cellulose",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "La spécificité des groupes sanguins ABO dépend de la fraction glucidique des glycoprotéines des globules rouges",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "En projection de Fischer, on distingue les conformations furane et pyrane",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q23",
+      "type": "multiple",
+      "prompt": "Concernant les oses complexes:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "La lactase garde son activité au maximum chez une personne qui n’est pas intolérante au lactose",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Les diholosides réducteurs ont des liaisons osido- oside (1-4) ou (1-6)",
+          "correct": false,
+          "explanation": "Faux Liaison osido-oside et osido-ose inversée"
+        },
+        {
+          "id": "c",
+          "text": "Le maltose est composé de 2 glucose lié en 1-4 par une liaison $\\alpha$",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Une déficience en sucrose-isomaltase provoque des symptômes similaires à ceux de l'intolérance au lactose",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Les diholosides non- réducteurs ont des liaisons osido-ose (1-1)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q24",
+      "type": "multiple",
+      "prompt": "Cochez la/les affirmation(s) correcte(s)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "On retrouve des GAG au niveau du glycocalyx des cellules",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Contrairement au glycogène, l’amidon n’est pas ramifié",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "L’acide ascorbique ou vitamine C permet de lutter contre le stress oxydant",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Les deux oses du lactose sont reliés par une liaison alpha",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Les deux oses du maltose sont reliés par une liaison alpha",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q25",
+      "type": "multiple",
+      "prompt": "À partir de la projection de Fischer du D-Galactose ci dessous, cochez les propositions justes, concernant sa représentation en projection de Haworth",
+      "images": [
+        "assets/q25-1.png"
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le groupement $\\ce{CH2OH}$ porté par le carbone 5 est orienté vers le haut",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Le groupement OH porté par le carbone 2 est orienté vers le haut",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Le groupement OH porté par le carbone 3 est orienté vers le haut",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Le groupement OH porté par le carbone 4 est orienté vers le bas",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "La cyclisation peut conduire aux deux anomères $\\alpha$ et $\\beta$",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q26",
+      "type": "multiple",
+      "prompt": "Cochez la/les affirmation(s) correcte(s)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les cétoses sont très peu réducteurs contrairement aux aldoses",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Les cétoses sont aussi peu hydrosolubles",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "L’épimérisation du glucose en mannose ou galactose est un phénomène spontané",
+          "correct": false,
+          "explanation": "Nécessite d’une enzyme (épimérases) donc non spontané"
+        },
+        {
+          "id": "d",
+          "text": "Le maltose est constitué d’un aldose et d’un cétose",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Les oses sont facilement estérifiables",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q27",
+      "type": "multiple",
+      "prompt": "Concernant la molécule ci-dessous, quelle(s) proposition(s) est/sont juste(s) ?",
+      "images": [
+        "assets/q27-1.png"
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il s’agit d’un aldohexose.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Cette molécule dévie la lumière polarisée vers la droite.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Il s’agit de l’épimère en C4 du glucose.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "C’est un isomère du fructose.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Il s’agit de la forme cyclique du D-mannose.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q28",
+      "type": "multiple",
+      "prompt": "Concernant l’hybridation du carbone, quelles proposition(s) est/sont exacte(s) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le carbone sp3 possède 4 liaisons simples.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Le carbone sp2 possède 2 liaisons simples et 1 liaison double.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Le carbone sp possède une liaison simple et une liaison triple.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Le carbone sp peut également posséder 2 liaisons doubles.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Le carbone sp3 possède obligatoirement une liaison triple.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q29",
+      "type": "multiple",
+      "prompt": "Soit la molecule A suivante, quelle(s) proposition(s) est/sont vraie(s)",
+      "images": [
+        "assets/q29-1.png"
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "text": "La molécule A est écrite en formule topologique.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "La molécule A possède 2 carbone hybridés sp, 2 carbone hybridés $sp^2$, et 8 carbones hybridés $sp^3$.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "La molécule A possède 2 carbone hybridés sp, 3 carbone hybridés $sp^2$, et 7 carbones hybridés $sp^3$.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "La molécule A possède 2 carbones hybridés sp, 4 carbones hybridés $sp^2$, et 6 carbones hybridés $sp^3$.",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "La molécule A possède 3 liaisons $\\pi$.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q30",
+      "type": "multiple",
+      "prompt": "Concernant le carbone asymétrique quelle(s) proposition(s) est (sont exacte(s) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Un carbone asymétrique porte 4 substituants différents.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Un carbone asymétrique est également appelé C*.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Un carbone portant deux substituants identiques peut-être considéré comme asymétrique.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Le carbone asymétrique constitue un centre de chiralité.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Une molécule possédant un carbone asymétrique est chirale.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q31",
+      "type": "multiple",
+      "prompt": "Choisir la ou les bonne(s) réponse(s)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "L’effet inducteur est dû à la polarisation d’une liaison pi.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Un atome plus électronégatif que le C possède un effet inducteur + I.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Un atome moins électronégatif que le C possède un effet inducteur -I.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "L’électronégativité augmente de bas en haut et de gauche à droite dans le tableau périodique.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Toutes les réponses précédentes sont vraies.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q32",
+      "type": "multiple",
+      "prompt": "Concernant la stéréoisomérie choisir la ou les bonne(s) réponse(s)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Un stéréoisomère des composés ayant la même formule développée plane mais une disposition des atomes et des groupement différente dans l’espace",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Les énantiomères et diastéréoisomères font parti de la famille des isomères plans",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Pour les chaînes hydrocarbonées acycliques, la configuration la plus stable est celle avec les groupement voisins décalés",
+          "correct": false,
+          "explanation": "c’est la conformation décalée (attention ne pas confondre conformation et configuration)"
+        },
+        {
+          "id": "d",
+          "text": "La chiralité est la propriété que présentent certaines molécules qui ne sont pas superposables à leur image dans un miroir",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Concernant le pouvoir rotatoire d’une molécule il est noté - lorsque la molécule est dite dextrogyre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q33",
+      "type": "multiple",
+      "prompt": "Concernant la molécule suivante\n\n$\\ce{Na-CH2-CH2-Cl}$",
+      "choices": [
+        {
+          "id": "a",
+          "text": "L’atome de chlore exerce un effet électroattracteur sur le carbone auquel il est lié",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "L’atome de sodium exerce un effet électroattracteur sur le carbone auquel il est lié",
+          "correct": false,
+          "explanation": "effet électrodonneur, na bcp moins électronégatif que C"
+        },
+        {
+          "id": "c",
+          "text": "Le chlore exerce un effet inductif -I",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "L’atome de sodium porte une charge partielle $\\delta-$",
+          "correct": false,
+          "explanation": "$\\delta+$, dans la liaison C-Na les e- sont attirés par C"
+        },
+        {
+          "id": "e",
+          "text": "L’atome de chlore porte une charge partielle $\\delta-$",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q34",
+      "type": "multiple",
+      "prompt": "Concernant les zones électroniques d’une molécule :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Une zone $\\delta+$ est susceptible de réagir avec un nucléophile",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Un nucléophile possède un électron supplémentaire ou un doublet facilement mobilisable",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Un électrophile possède une lacune électronique",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Une zone $\\delta-$ est susceptible de réagir avec un électrophile",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Les nucléophile “aiment” les charges négatives",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q35",
+      "type": "multiple",
+      "prompt": "Quelle(s) est(sont) la(les) proposition(s) juste(s)?",
+      "images": [
+        "assets/q35-1.png"
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cette molécule présente un seul carbone asymétrique",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Il existe 8 stéréoisomères de cette molécule",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "La double liaison est de configuration E",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "La double liaison est de configuration Z",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Cette molécule 3 carbones asymétriques",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q36",
+      "type": "multiple",
+      "prompt": "Concernant les acides et les bases :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Un acide fort est un acide entièrement déprotoné en solution.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Une base faible est un acide partiellement déprotoné en solution.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Un acide ou une base monoprotique est capable de libérer ou d’accepter un ou plusieurs $\\ce{H+}$.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "L’acide acétique $\\ce{CH3COOH}$ est un acide fort.",
+          "correct": false,
+          "explanation": "et non l’acide acétique est un acide faible"
+        },
+        {
+          "id": "e",
+          "text": "L’acide chlorhydrique $\\ce{HCl}$ est un acide fort.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q37",
+      "type": "multiple",
+      "prompt": "On considère une solution aqueuse contenant des ions $\\ce{H3O+}$ dont le pH est égal à 2,48. Quelle est la concentration en ions $\\ce{H3O+}$ ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "- 0, 39 $\\mathrm{mol.L^{-1}}$",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "0,0033 $\\mathrm{mol.L^{-1}}$",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "$3,3.10^{-3}$ $\\mathrm{mol.L^{-1}}$",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "$3,1.10^{-3}$ $\\mathrm{mol.L^{-1}}$",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Aucune des réponses n’est correcte.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q38",
+      "type": "multiple",
+      "prompt": "Choisir la ou les bonne(s) réponse(s)",
+      "choices": [
+        {
+          "id": "a",
+          "text": "La fusion nucléaire nécessité le bombardement de deux noyaux par un neutron",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "La fission résulte de l’instabilité de noyaux lourds",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Il s'agit d'un exemple de fission : $\\ce{^{2}_{1}H + ^{3}_{1}H -> ^{4}_{2}He + ^{1}_{0}}$",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "La fusion nucléaire forme un noyau plus lourd à partir de l’union de deux noyaux légers",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "La fission nucléaire forme un noyau plus lourd à partir de l’union de deux noyaux légers",
+          "correct": false,
+          "explanation": "C’est la FUSION"
+        }
+      ]
+    },
+    {
+      "id": "q39",
+      "type": "multiple",
+      "prompt": "Concernant les rayonnement ionisants :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Si des charges ont le même signe elles se repoussent",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Si les charges ont des signes opposés elles se repoussent",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Un rayonnement peut être corpusculaire ou ondulatoire",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Les ondes mécaniques progressives peuvent se propager dans le vide les ondes mécaniques progressives peuvent se propager uniquement dans la matière",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Les ondes électromagnétiques sont constituées d'un champ magnétique et d'un champ électrique",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q40",
+      "type": "multiple",
+      "prompt": "Concernant l’hydrodynamique :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il est nécessaire de travailler avec un fluide parfait, un régime temporaire et avec un écoulement laminaire en Bernouilli.",
+          "correct": false,
+          "explanation": "Ici on travaille sur un régime permanent où le temps n'est pas pris en compte.(n'entre pas dans les valeurs de types vitesse, pression et température)."
+        },
+        {
+          "id": "b",
+          "text": "L'énergie potentielle de Pesanteur (EPP) : $\\rho \\times g \\times z$",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "L'énergie cinétique (Ec) : $0.5 \\times \\rho \\times v^2$",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "L'énergie mécanique représente la Tension",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Epp + Ec + P : constante de Bernoulli",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pomkuiz:quiz.v1",
+  "title": "POMKUIZ quiz",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "title", "updatedAt", "questions"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "$ref": "#/$defs/slug" },
+    "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "description": { "type": "string", "maxLength": 2000 },
+    "tags": {
+      "type": "array",
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1, "maxLength": 40 }
+    },
+    "updatedAt": { "type": "string", "format": "date" },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 500,
+      "items": { "$ref": "#/$defs/question" }
+    }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "maxLength": 80,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "itemId": {
+      "type": "string",
+      "maxLength": 40,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "richText": { "type": "string", "maxLength": 10000 },
+    "assetPath": {
+      "type": "string",
+      "maxLength": 120,
+      "pattern": "^assets/[a-z0-9]+(?:-[a-z0-9]+)*\\.png$"
+    },
+    "images": {
+      "type": "array",
+      "maxItems": 10,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/assetPath" }
+    },
+    "hasTextOrImage": {
+      "anyOf": [
+        { "type": "object", "properties": { "text": { "type": "string", "minLength": 1 } } },
+        {
+          "type": "object",
+          "required": ["images"],
+          "properties": { "images": { "type": "array", "minItems": 1 } }
+        }
+      ]
+    },
+    "choice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "correct"],
+      "properties": {
+        "id": { "$ref": "#/$defs/itemId" },
+        "text": { "$ref": "#/$defs/richText" },
+        "correct": { "type": "boolean" },
+        "images": { "$ref": "#/$defs/images" },
+        "explanation": { "$ref": "#/$defs/richText" }
+      },
+      "$ref": "#/$defs/hasTextOrImage"
+    },
+    "correctChoice": {
+      "type": "object",
+      "required": ["correct"],
+      "properties": { "correct": { "const": true } }
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "prompt", "choices"],
+      "properties": {
+        "id": { "$ref": "#/$defs/itemId" },
+        "type": { "enum": ["single", "multiple"] },
+        "prompt": { "$ref": "#/$defs/richText" },
+        "images": { "$ref": "#/$defs/images" },
+        "choices": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 26,
+          "items": { "$ref": "#/$defs/choice" }
+        },
+        "explanation": { "$ref": "#/$defs/richText" }
+      },
+      "anyOf": [
+        { "type": "object", "properties": { "prompt": { "type": "string", "minLength": 1 } } },
+        {
+          "type": "object",
+          "required": ["images"],
+          "properties": { "images": { "type": "array", "minItems": 1 } }
+        }
+      ],
+      "if": { "type": "object", "properties": { "type": { "const": "single" } } },
+      "then": {
+        "type": "object",
+        "properties": {
+          "choices": {
+            "type": "array",
+            "contains": { "$ref": "#/$defs/correctChoice" },
+            "minContains": 1,
+            "maxContains": 1
+          }
+        }
+      },
+      "else": {
+        "type": "object",
+        "properties": {
+          "choices": {
+            "type": "array",
+            "contains": { "$ref": "#/$defs/correctChoice" },
+            "minContains": 1
+          }
+        }
+      }
+    }
+  }
+}

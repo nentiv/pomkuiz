@@ -1,0 +1,15 @@
+apps/backoffice/workspace/
+data/mcq/
+*.pdf
+
+.env*
+*.pem
+*.key
+
+node_modules/
+
+dist/
+coverage/
+*.log
+
+.DS_Store

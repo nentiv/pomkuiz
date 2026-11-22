@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pomkuiz:index.v1",
+  "title": "POMKUIZ quiz index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "quizzes"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "quizzes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "description", "questionCount", "date", "tags"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 80,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "description": { "type": "string", "maxLength": 2000 },
+          "questionCount": { "type": "integer", "minimum": 1 },
+          "date": { "type": "string", "format": "date" },
+          "tags": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1, "maxLength": 40 }
+          }
+        }
+      }
+    }
+  }
+}

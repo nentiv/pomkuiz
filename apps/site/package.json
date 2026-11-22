@@ -1,0 +1,20 @@
+{
+  "name": "@pomkuiz/site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.node.json"
+  },
+  "dependencies": {
+    "@pomkuiz/design-system": "0.1.0",
+    "@pomkuiz/quiz-contract": "0.1.0",
+    "preact": "11.2.0"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1"
+  }
+}

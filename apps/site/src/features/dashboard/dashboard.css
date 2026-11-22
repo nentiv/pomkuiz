@@ -1,0 +1,59 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.resume-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.resume-ring-value {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-black);
+}
+
+.resume-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  flex: 1;
+  min-width: 0;
+}
+
+.resume-title {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  overflow-wrap: anywhere;
+}
+
+.resume-go {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: var(--tap);
+  height: var(--tap);
+  border-radius: 50%;
+  background: var(--accent-strong);
+  color: var(--accent-ink);
+  transition: transform var(--duration) var(--ease);
+}
+
+.resume-card:hover .resume-go {
+  transform: translateX(3px);
+}
+
+@media (max-width: 480px) {
+  .resume-card .ring {
+    width: 3.75rem;
+  }
+}
