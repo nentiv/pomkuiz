@@ -39,6 +39,7 @@ interface DraftMeta {
   id: string;
   title: string;
   description: string;
+  section?: string;
   tags: string[];
 }
 

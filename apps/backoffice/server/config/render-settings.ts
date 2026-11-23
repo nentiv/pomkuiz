@@ -10,6 +10,7 @@ const RENDER_SETTINGS = Object.freeze({
     maxLongEdgePx: 1568,
     maxPixels: 1_150_000,
     maxScale: 2,
+    targetLineHeightPx: 16,
     minHeightRatio: 0.35,
     contentPaddingPt: 8,
     mergeGapPt: 2,

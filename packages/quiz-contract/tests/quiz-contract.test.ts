@@ -76,6 +76,10 @@ describe("contract limits", () => {
     const schema = CONTRACT_SCHEMAS.quiz;
     expect(schema.properties.title.maxLength).toBe(CONTRACT_LIMITS.titleCharacters);
     expect(schema.properties.description.maxLength).toBe(CONTRACT_LIMITS.descriptionCharacters);
+    expect(schema.properties.section.maxLength).toBe(CONTRACT_LIMITS.sectionCharacters);
+    expect(CONTRACT_SCHEMAS.index.properties.quizzes.items.properties.section.maxLength).toBe(
+      CONTRACT_LIMITS.sectionCharacters,
+    );
     expect(schema.properties.tags.maxItems).toBe(CONTRACT_LIMITS.maxTags);
     expect(schema.properties.tags.items.maxLength).toBe(CONTRACT_LIMITS.tagCharacters);
     expect(schema.properties.questions.maxItems).toBe(CONTRACT_LIMITS.maxQuestions);

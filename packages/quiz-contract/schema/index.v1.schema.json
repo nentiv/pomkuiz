@@ -23,6 +23,7 @@
           "description": { "type": "string", "maxLength": 2000 },
           "questionCount": { "type": "integer", "minimum": 1 },
           "date": { "type": "string", "format": "date" },
+          "section": { "type": "string", "minLength": 1, "maxLength": 80 },
           "tags": {
             "type": "array",
             "uniqueItems": true,

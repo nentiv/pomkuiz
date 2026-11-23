@@ -4,9 +4,13 @@ type CorrectionMode = (typeof CORRECTION_MODES)[number];
 const THEMES = ["light", "system", "dark"] as const;
 type Theme = (typeof THEMES)[number];
 
+const SCORE_SCALES = ["twenty", "percent"] as const;
+type ScoreScale = (typeof SCORE_SCALES)[number];
+
 const STORAGE_PREFIX = "pomkuiz.v1";
 
 const APP_CONFIG = Object.freeze({
+  locale: "fr-FR",
   storage: Object.freeze({
     settingsKey: `${STORAGE_PREFIX}.settings`,
     quizKeyPrefix: `${STORAGE_PREFIX}.quiz.`,
@@ -16,6 +20,8 @@ const APP_CONFIG = Object.freeze({
   defaultCorrectionMode: "end" as CorrectionMode,
   defaultTheme: "system" as Theme,
   defaultShuffle: false,
+  defaultScoreScale: "twenty" as ScoreScale,
+  gradeMax: 20,
   dataDirectory: "data",
   percentDigits: 0,
   pointDigits: 2,
@@ -31,5 +37,5 @@ const KEYBOARD = Object.freeze({
   choiceDigits: "123456789",
 });
 
-export { CORRECTION_MODES, THEMES, APP_CONFIG, KEYBOARD };
-export type { CorrectionMode, Theme };
+export { CORRECTION_MODES, THEMES, SCORE_SCALES, APP_CONFIG, KEYBOARD };
+export type { CorrectionMode, Theme, ScoreScale };

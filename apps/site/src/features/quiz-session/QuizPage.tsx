@@ -3,7 +3,7 @@ import { usePreferences } from "../../app/PreferencesProvider.tsx";
 import { CORRECTION_MODES } from "../../shared/config/app-config.ts";
 import type { Quiz } from "@pomkuiz/quiz-contract";
 import { fetchQuiz, useLoadable } from "../../shared/data/quiz-api.ts";
-import { formatPercent, splitTitleDate } from "../../shared/formatters.ts";
+import { formatGrade, splitTitleDate } from "../../shared/formatters.ts";
 import { MESSAGES } from "../../shared/i18n/messages-fr.ts";
 import { createId } from "../../shared/create-id.ts";
 import {
@@ -90,14 +90,14 @@ function QuizOverview({ quiz }: { quiz: Quiz }) {
           <Card padding="md" tone={scoreLevel(last.normal / last.max)}>
             <ScoreStat
               label={messages.lastScore}
-              value={formatPercent(last.normal, last.max)}
+              value={formatGrade(last.normal, last.max, settings.scoreScale)}
               tone={scoreLevel(last.normal / last.max)}
             />
           </Card>
           <Card padding="md" tone={scoreLevel(best.normal / best.max)}>
             <ScoreStat
               label={messages.bestScore}
-              value={formatPercent(best.normal, best.max)}
+              value={formatGrade(best.normal, best.max, settings.scoreScale)}
               tone={scoreLevel(best.normal / best.max)}
             />
           </Card>

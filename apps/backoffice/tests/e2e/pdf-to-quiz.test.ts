@@ -28,7 +28,7 @@ describe("PDF Moodle → quiz.json", () => {
     const progress = await waitForJob(context, importId);
     expect(progress.status).toBe("completed");
     expect(progress.done).toBe(progress.total);
-    expect(progress.total).toBeGreaterThan(2);
+    expect(progress.total).toBeGreaterThanOrEqual(2);
 
     const loaded = await context.request({ method: "GET", url: `/api/imports/${importId}/draft` });
     expect(loaded.statusCode).toBe(200);

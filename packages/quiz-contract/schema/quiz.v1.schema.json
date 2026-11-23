@@ -10,6 +10,7 @@
     "id": { "$ref": "#/$defs/slug" },
     "title": { "type": "string", "minLength": 1, "maxLength": 200 },
     "description": { "type": "string", "maxLength": 2000 },
+    "section": { "type": "string", "minLength": 1, "maxLength": 80 },
     "tags": {
       "type": "array",
       "maxItems": 20,

@@ -20,6 +20,7 @@ const MESSAGES = Object.freeze({
     title: "Prêt à réviser ?",
     summary: (quizzes: number, questions: number) =>
       `${plural(quizzes, "QCM", "QCM")} · ${plural(questions, "question")}`,
+    otherSection: "Autres QCM",
     empty: "Aucun QCM publié pour le moment.",
     emptyHint: "Les nouveaux QCM apparaîtront ici.",
   }),
@@ -32,6 +33,8 @@ const MESSAGES = Object.freeze({
     completedValue: (done: number, total: number) => `${done} / ${total}`,
     average: "Note moyenne",
     averageHint: "Dernière tentative de chaque QCM",
+    scoreScale: "Affichage de la note",
+    scoreScales: Object.freeze({ twenty: "/20", percent: "%" }),
     none: "—",
   }),
   list: Object.freeze({
@@ -91,7 +94,8 @@ const MESSAGES = Object.freeze({
     hint: "1 point par question exactement juste",
     answered: (answered: number, total: number) =>
       `${answered} réponse${answered > 1 ? "s" : ""} sur ${total} questions`,
-    ring: (percent: string) => `Note : ${percent}`,
+    ring: (grade: string) => `Note : ${grade}`,
+    outOf: (max: number) => `sur ${max}`,
     review: "Correction",
     filter: "Filtrer la correction",
     filters: Object.freeze({

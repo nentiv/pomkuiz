@@ -66,6 +66,7 @@ const UI_MESSAGES = Object.freeze({
     id: "Identifiant (dossier data/quizzes/…)",
     idHint: "minuscules, chiffres et tirets",
     description: "Description",
+    section: "Section (regroupe les QCM sur le site)",
     tags: "Tags (séparés par des virgules)",
   }),
   editor: Object.freeze({

@@ -1,0 +1,505 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-09-13-de-la-substance-aux-molecules",
+  "title": "2026-09-13 De la substance aux molécules",
+  "section": "QCM 26/27",
+  "updatedAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "prompt": "Carbocations et carbanions",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Un carbocation est plus stable s’il s’agit d’un carbone primaire.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "L’effet électronique résultant de la présence d’un phényl sur le carbanion permet de le stabiliser.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Un carbanion est plus stable s’il s’agit d’un carbone tertiaire.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "L’effet électronique résultant de la présence d’un phényl sur le carbocation permet de le stabiliser.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Les effets +M et +I stabilisent les carbocations.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "prompt": "Concernant l'effet inducteur, cochez la/les bonne(s) réponse(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Un atome ou groupe d'atomes - électronégatif que C repoussent les électrons (-I)",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "L'électronégativité dans le tableau périodique augmente de bas en haut et de gauche à droite",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Un atome ou groupe d'atomes + électronégatif que C attirent les électrons (+I)",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "L'effet inducteur stabilise certaines liaisons",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Du moins au plus électronégatif, on considère F",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple",
+      "prompt": "Concernant l'hybridation des orbitales, cochez la/les bonne(s) réponse(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le soufre peut être divalent",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Le phosphore peut être pentavalent",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "L’azote est tétravalent",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "L’oxygène est divalent",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Les halogènes sont divalents",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multiple",
+      "prompt": "Effet inducteur",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les métaux ont un effet inducteur donneur",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "La mésomérie prend le pas sur l'effet inducteur",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "$\\ce{NO2}$ a un effet –I",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Un groupement alkyle est –I",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Un halogène a un effet +I",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple",
+      "prompt": "La mésomérie",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Une forme hybride de résonance rend mieux compte de la réactivité de la molécule que les formes mésomères limites",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "La mésomérie a lieu sur des systèmes conjugués",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "La mésomérie permet de délocaliser des électrons $\\sigma$",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "L'effet mésomère se propage en diminuant d'intensité",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "La mésomérie permet la transformation d'une fonction en une autre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "prompt": "Les réactions radicalaires sont généralement initiées par :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Un acide fort obligatoirement.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "La chaleur.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Un rayonnement UV.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Un initiateur de radicaux comme le peroxyde de benzoyle.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Une rupture hétérolytique.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple",
+      "prompt": "L’effet inducteur",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les zones plus denses en électrons réagissent avec les électrophiles.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "L’effet inducteur a un effet plus fort que la mésomérie.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Un effet +I est exercé par un groupement plus électronégatif que le carbone.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "L’effet inducteur est un effet électronique qui est dû à des différences d’électronégativité entre deux atomes liés de façon covalente.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "L’effet inducteur est le résultat de la polarisation des liaisons $\\sigma$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple",
+      "prompt": "On réalise une réaction en chauffant une molécule contenant une liaison X–Y. La liaison X–Y se rompt de manière homolytique.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "X et Y récupèrent chacun un électron.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Deux radicaux libres peuvent être formés.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "X et Y deviennent nécessairement des ions.",
+          "correct": false,
+          "explanation": "ils deviennent des radicaux libres"
+        },
+        {
+          "id": "d",
+          "text": "La chaleur peut provoquer l’initiation de la réaction.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Les espèces radicalaires formées sont généralement particulièrement stables.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "prompt": "Parmi ces propositions quelle(s) liste représente les halogènes ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "F, Cl, Br, I",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "F, Cl, Na, Li",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Mg, Zn, Cd, I",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mg, Zn, Br, I",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "F, Cl, Br, S",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "multiple",
+      "prompt": "Parmi les propositions suivantes, quelle(s) est (sont) exacte(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "L'effet inducteur est constant tout au long d'une chaîne carbonée saturée et est prioritaire sur l'effet mésomère.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Les halogènes ont des effets inductifs attracteurs.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Un carbocation est stabilisé par effet inductif -I.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Le groupement méthyle a un effet inductif attracteur.",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "L'effet inducteur est une conséquence de la polarisation des liaisons entre atomes.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "type": "multiple",
+      "prompt": "Parmi les propositions suivantes, quelle(s) est(sont) exacte(s) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Une zone \"moins dense\" en électrons réagit avec une électrophile.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "L'effet inducteur peut permettre l'existence de \"H mobiles\" sur la molécule et donc participer à l'acquisition d'une aptitude acide par cette dernière.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "L'effet inductif, c'est la transmission d'une perturbation électronique par des liaisons sigma",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Une molécule ne peut avoir qu'un seul effet électronique à la fois.",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "L'effet inducteur provient de la polarisation d'une liaison sigma et se transmet de proche en proche.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "multiple",
+      "prompt": "Parmi les propositions suivantes, quelle(s) est(sont) exacte(s) ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "La mésomérie correspond à un équilibre entre plusieurs molécules de même composition mais présentants des répartitions électroniques différentes.",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Des formes mésomères possèdent le même squelette atomique.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Une molécule non-conjuguée présentant une alternance pi-sigma-pi peut avoir un effet mésomère.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Lorsque l'on écrit la forme mésomère part d'une molécule neutre, on obtient forcément une molécule ne possédant pas de charges.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Plus une espèce possède de formes mésomères et plus elle est stable par rapport à une autre.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "type": "multiple",
+      "prompt": "Soit la molécule A suivante et ses formes mésomères",
+      "images": [
+        "assets/q13-1.png"
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "text": "A est l'isomère E",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "L'atome de chlore présente un effet mésomère attracteur -M",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "A est l'isomère Z",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "L'écriture correcte de la forme mésomère de A et B",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "L'écriture correcte de la forme mésomère de A et C",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "type": "multiple",
+      "prompt": "Parmi les structures A à E suivantes, quelles sont celles qui font apparaître un système conjugué ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "",
+          "correct": false,
+          "images": [
+            "assets/q14-a-1.png"
+          ]
+        },
+        {
+          "id": "b",
+          "text": "",
+          "correct": true,
+          "images": [
+            "assets/q14-b-1.png"
+          ]
+        },
+        {
+          "id": "c",
+          "text": "",
+          "correct": true,
+          "images": [
+            "assets/q14-c-1.png"
+          ]
+        },
+        {
+          "id": "d",
+          "text": "$\\ce{H2C=C=O}$",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "$\\ce{H2C=CH-NH2}$",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "type": "multiple",
+      "prompt": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exactes ?",
+      "images": [
+        "assets/q15-1.png"
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "text": "L'entité chimique H est une forme mésomère de l'entité chimique G",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "L'équilibre entre l'entité chimique H et l'entité chimique G est représenté par la flèche :",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "L'entité chimique G est un carbocation",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "L'entité chimique G présente une fonction alcool",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Tout les carbones de l'entité chimique G sont hybridés sp3",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -110,7 +110,7 @@ async function buildDraft(input: {
     importId: input.record.id,
     revision: 0,
     updatedAt: new Date().toISOString(),
-    meta: { id: slugify(title), title, description: "", tags: [] },
+    meta: { id: slugify(title), title, description: "", section: "", tags: [] },
     questions,
     lastExport: null,
   };

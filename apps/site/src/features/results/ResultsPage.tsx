@@ -1,9 +1,10 @@
 import { useState } from "preact/hooks";
 import { href, navigate } from "../../app/hash-router.ts";
 import { usePreferences } from "../../app/PreferencesProvider.tsx";
+import { APP_CONFIG } from "../../shared/config/app-config.ts";
 import type { Quiz } from "@pomkuiz/quiz-contract";
 import { fetchQuiz, useLoadable } from "../../shared/data/quiz-api.ts";
-import { formatPercent, formatScore, splitTitleDate } from "../../shared/formatters.ts";
+import { formatGrade, formatGradeValue, formatScore, splitTitleDate } from "../../shared/formatters.ts";
 import { MESSAGES } from "../../shared/i18n/messages-fr.ts";
 import { createId } from "../../shared/create-id.ts";
 import {
@@ -43,7 +44,7 @@ function ResultsView({ quiz, attemptId }: { quiz: Quiz; attemptId: string }) {
   const messages = MESSAGES.results;
   const summary = scoreAttempt(quiz, attempt.answers);
   const level = scoreLevel(summary.max > 0 ? summary.normal / summary.max : 0);
-  const percent = formatPercent(summary.normal, summary.max);
+  const grade = formatGrade(summary.normal, summary.max, settings.scoreScale);
   const mistakes = reviewed.filter((item) => item.score.normal === 0);
   const visible = filter === "all" ? reviewed : mistakes;
   const name = splitTitleDate(quiz.title).name;
@@ -70,8 +71,9 @@ function ResultsView({ quiz, attemptId }: { quiz: Quiz; attemptId: string }) {
         meta={messages.answered(summary.answered, summary.max)}
       />
       <Card tone="pastel" padding="lg" class="results-hero">
-        <ProgressRing value={summary.normal} max={summary.max} tone={level} size="lg" label={messages.ring(percent)}>
-          <span class="results-percent">{percent}</span>
+        <ProgressRing value={summary.normal} max={summary.max} tone={level} size="lg" label={messages.ring(grade)}>
+          <span class="results-percent">{formatGradeValue(summary.normal, summary.max, settings.scoreScale)}</span>
+          {settings.scoreScale === "twenty" && <span class="results-score">{messages.outOf(APP_CONFIG.gradeMax)}</span>}
           <span class="results-score">{formatScore(summary.normal, summary.max)}</span>
         </ProgressRing>
         <div class="results-summary">

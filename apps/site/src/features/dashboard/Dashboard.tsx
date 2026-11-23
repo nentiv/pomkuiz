@@ -1,13 +1,19 @@
 import { href } from "../../app/hash-router.ts";
-import { formatPercent, splitTitleDate } from "../../shared/formatters.ts";
+import { usePreferences } from "../../app/PreferencesProvider.tsx";
+import { SCORE_SCALES } from "../../shared/config/app-config.ts";
+import { formatGrade, formatPercent, splitTitleDate } from "../../shared/formatters.ts";
 import { MESSAGES } from "../../shared/i18n/messages-fr.ts";
-import { Card, Icon, ProgressBar, ProgressRing, ScoreStat } from "@pomkuiz/design-system";
+import { Card, Icon, ProgressBar, ProgressRing, ScoreStat, Segmented } from "@pomkuiz/design-system";
 import { ArrowRight } from "@pomkuiz/design-system/icons";
 import { scoreLevel } from "../results/scoring.ts";
 import type { DashboardStats } from "./dashboard-stats.ts";
 import "./dashboard.css";
 
 const RATIO_MAX = 1;
+const SCORE_SCALE_OPTIONS = SCORE_SCALES.map((scale) => ({
+  value: scale,
+  label: MESSAGES.dashboard.scoreScales[scale],
+}));
 
 function ResumeCard({ resume }: { resume: NonNullable<DashboardStats["resume"]> }) {
   const messages = MESSAGES.dashboard;
@@ -36,6 +42,7 @@ function ResumeCard({ resume }: { resume: NonNullable<DashboardStats["resume"]> 
 }
 
 function Dashboard({ stats }: { stats: DashboardStats }) {
+  const { settings, updateSettings } = usePreferences();
   if (!stats.hasActivity) return null;
   const messages = MESSAGES.dashboard;
   const averageLevel = stats.average !== null ? scoreLevel(stats.average) : null;
@@ -54,9 +61,22 @@ function Dashboard({ stats }: { stats: DashboardStats }) {
         <Card padding="md" tone={averageLevel ?? "glass"} class="widget">
           <ScoreStat
             label={messages.average}
-            value={stats.average !== null ? formatPercent(stats.average, RATIO_MAX) : messages.none}
+            value={stats.average !== null ? formatGrade(stats.average, RATIO_MAX, settings.scoreScale) : messages.none}
             tone={averageLevel ?? "neutral"}
             hint={messages.averageHint}
+            action={
+              stats.average !== null && (
+                <Segmented
+                  name="score-scale"
+                  legend={messages.scoreScale}
+                  options={SCORE_SCALE_OPTIONS}
+                  value={settings.scoreScale}
+                  onChange={(scoreScale) => updateSettings({ scoreScale })}
+                  hideLegend
+                  size="sm"
+                />
+              )
+            }
           />
         </Card>
       </div>

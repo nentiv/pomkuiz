@@ -1,0 +1,571 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-09-13-les-glucides",
+  "title": "2026-09-13 Les Glucides",
+  "section": "QCM 26/27",
+  "updatedAt": "2026-11-23",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple",
+      "prompt": "A propos des dérivés de glucides, cochez la/les réponses juste(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les osamines sont présentes dans la MEC.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "La fructosamine a un intérêt biologique.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Les osamines sont présentes dans les glycolipides.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Toutes les réponses sont justes.",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "La glucosamine possède un groupement alcool en position 2.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple",
+      "prompt": "à propos des dérivés de glucides, cochez la/les réponses juste(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "L’acide sialique est retrouvé chez les eucaryotes.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "L’acide N-acétylneuranimique joue un rôle dans la conduction nerveuse.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "L’acide ascorbique a un effet anti-oxydant.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "L’acide sialique est aussi connu sous le nom de vitamine C.",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "L’acide ascorbique est entièrement synthétisé par l’organisme.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multiple",
+      "prompt": "à propos des glucides",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le rendement énergétique des glucides est inférieur à celui des acides gras",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ils ont un rôle structural : ce sont des éléments de soutien, de protection et de reconnaissance",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Leur formule brute est $\\ce{(CH2O)_{2n}}$",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Tous les glucides sont synthétisés à partir du glucose dans l’organisme",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Ce sont des molécules organiques dont les carbones sont toujours liés à une fonction aldéhyde en fin de chaîne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "single",
+      "prompt": "A propos du polysaccharide linéaire lié en beta 1-4 non ramifié :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "La maltase permet de l’hydrolyser",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Cette molécule peut provoquer une intolérance",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Elle possède un important rôle de réserve",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "L’homme ne peut pas la digérer lui même",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Elle est synthétisée dans des grains d’amyloplastes dans les cellules végétales",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multiple",
+      "prompt": "Classification des oses et osides",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les polyosides sont constitués de plusieurs centaines d’oses",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Les hétérosides donnent par hydrolyse des oses et de l’aglycone (partie non sucrée : protéine, lipides,etc)",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Un aldotriose est une cétone à 3 carbones",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Les osides sont des molécules dont l’hydrolyse fournit au moins 2 molécules d’oses",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Les glycolipides sont un exemple d’holosides",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multiple",
+      "prompt": "Cochez la/les réponse(s) correcte(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "L’orientation des groupements OH influence les propriétés physiques des oses",
+          "correct": false,
+          "explanation": "propriétés chimiques"
+        },
+        {
+          "id": "b",
+          "text": "Pour une cétone le carbonyle est en C2",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Pour un aldéhyde le carbonyle est en C2",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Le =O est TOUJOURS à droite en représentation Lewis",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Il existe une convention de numérotation des carbones de la chaîne d’un ose.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "multiple",
+      "prompt": "Cochez la/les réponse(s) correcte(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "La structure cyclique des oses est la structure de Haworth",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Si le OH est au-dessus du plan, le glucose est dans une configuration bêta",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Dans le glucose, le cycle se fait entre le Carbone 1 et 5",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Les oses à plus longues chaînes n’aiment pas faire des cycles",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Si le OH est au-dessus du plan, le glucose est dans une configuration alpha",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "multiple",
+      "prompt": "Concernant le glucose et ses épimères, cochez la/les réponse(s) correcte(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le mannose est un épimère en 2 du glucose.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Le galactose est un épimère en 4 du glucose.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Le mannose est un épimère en 4 du glucose.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Mais n’importe quoi, c’est le fructose qui est un épimère en 4 du glucose.",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Le galactose est un épimère en 2 du glucose.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "multiple",
+      "prompt": "Concernant le glucose, cochez la/les réponse(s) correcte(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tous les glucides sont synthétisés à partir du glucose.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Le glucose a un indice glycémique de 23.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Le glucose apporte un niveau de satiété inférieur à celui du glucose.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Il possède une double liaison en C1.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Le glucose est un aldose.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "multiple",
+      "prompt": "Concernant le glycéraldéhyde, cochez la/les réponse(s) correcte(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il a 1 seul carbone symétrique",
+          "correct": false,
+          "explanation": "carbone asymétrique"
+        },
+        {
+          "id": "b",
+          "text": "La forme D = dextrogyre = dévie à droite",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Pour déterminer si un ose est de forme L ou D il faut regarder la position de l’avant dernier OH de la chaîne",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Dans le vivant on ne trouve que des oses de série L",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "C’est un triose",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "type": "multiple",
+      "prompt": "Concernant les oses, cochez la/les réponse(s) correcte(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Toutes les réponses sont vraies",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "L’épimérisation n’est pas spontanée.",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Une isomérase peut transformer du glucose en fructose",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "Le glucose est un épimère en C2 du mannose.",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Le galactose est un épimère en C4 du glucose",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "multiple",
+      "prompt": "Concernant les propriétés des oses, cochez la/les réponse(s) correcte(s) :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le fructose a un goût sucré.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Les oses peuvent s’épimériser à pH",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Les oses se réduisent en polyols.\nOn peut obtenir du fructose à partir d’un mannose.",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "text": "les cétoses peuvent s’épimeriser en milieu alcalin",
+          "correct": true,
+          "explanation": "Alcalin = basique"
+        },
+        {
+          "id": "e",
+          "text": "Les cétoses sont très réductrices.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "type": "single",
+      "prompt": "Définitions ++ :",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Les diastéréoisomères sont superposables et l’image l’un de l’autre dans un miroir",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Isomères optiques = énantiomères",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Les isomères ont des propriétés similaires",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Épimères : diffèrent au niveau de 2 carbones seulement.",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Tout est faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "type": "single",
+      "prompt": "et l’amidon alors?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Il possède des ramifications de galactose en $\\alpha$ 1-6",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Tout est faux",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "C’est le polyoside animal le plus abondant",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "On a besoin d’amidase pour la dégrader complètement",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Il a un rôle nutritionnel important chez l’Homme",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "type": "multiple",
+      "prompt": "Le saccharose",
+      "choices": [
+        {
+          "id": "a",
+          "text": "N’est pas digéré par l’espèce humaine",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "text": "Porte la même liaison osidique que le maltose",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Contient du galactose",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Contient une liaison osidique de type 1-2",
+          "correct": true
+        },
+        {
+          "id": "e",
+          "text": "Est un ose réducteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "type": "multiple",
+      "prompt": "un peu de tout",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Le glycogène est un polyoside plus ramifié que l’amidon",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Les GAGs ont un rôle dans les régulations de l’adhésion et du stress oxydant entre autres",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "text": "Les GAGs sont des polyosides homogènes",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Le maltose est une forme de stockage du glucose dans le foie et les muscles",
+          "correct": false
+        },
+        {
+          "id": "e",
+          "text": "Le lactose est un diholoside réducteur constitué d’une molécule de galactose et glucose en Béta 1-4",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "type": "single",
+      "prompt": "Quelle est la structure de Haworth représentant le glucose ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "",
+          "correct": false,
+          "images": [
+            "assets/q17-a-1.png"
+          ]
+        },
+        {
+          "id": "b",
+          "text": "",
+          "correct": false,
+          "images": [
+            "assets/q17-b-1.png"
+          ]
+        },
+        {
+          "id": "c",
+          "text": "",
+          "correct": true,
+          "images": [
+            "assets/q17-c-1.png"
+          ]
+        },
+        {
+          "id": "d",
+          "text": "",
+          "correct": false,
+          "images": [
+            "assets/q17-d-1.png"
+          ]
+        },
+        {
+          "id": "e",
+          "text": "",
+          "correct": false,
+          "images": [
+            "assets/q17-e-1.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

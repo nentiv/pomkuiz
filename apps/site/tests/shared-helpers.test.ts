@@ -38,15 +38,19 @@ describe("keyboard commands", () => {
 
 describe("misc helpers", () => {
   it("validates stored settings", () => {
-    expect(parseSettings({ correctionMode: "per-question", theme: "dark", shuffle: true })).toEqual({
+    expect(
+      parseSettings({ correctionMode: "per-question", theme: "dark", shuffle: true, scoreScale: "percent" }),
+    ).toEqual({
       correctionMode: "per-question",
       theme: "dark",
       shuffle: true,
+      scoreScale: "percent",
     });
-    expect(parseSettings({ correctionMode: "hack", theme: 3, shuffle: "yes" })).toEqual({
+    expect(parseSettings({ correctionMode: "hack", theme: 3, shuffle: "yes", scoreScale: "sur 10" })).toEqual({
       correctionMode: "end",
       theme: "system",
       shuffle: false,
+      scoreScale: "twenty",
     });
   });
 

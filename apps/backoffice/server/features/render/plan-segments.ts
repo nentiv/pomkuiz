@@ -4,6 +4,7 @@ interface SegmentPlanSettings {
   maxLongEdgePx: number;
   maxPixels: number;
   maxScale: number;
+  targetLineHeightPx: number;
   minHeightRatio: number;
   contentPaddingPt: number;
   mergeGapPt: number;
@@ -97,6 +98,18 @@ function chooseCut(cuts: readonly Cut[], from: number, to: number): Cut | null {
   return window.reduce<Cut | null>((best, cut) => (!best || cut.size >= best.size ? cut : best), null);
 }
 
+function medianLineHeight(lines: readonly TextLine[]): number | null {
+  const heights = lines.map(boxHeight).filter((height) => height > 0);
+  if (heights.length === 0) return null;
+  return heights.toSorted((first, second) => first - second)[Math.floor(heights.length / 2)] ?? null;
+}
+
+function chooseScale(layout: PageLayout, contentWidth: number, settings: SegmentPlanSettings): number {
+  const widthScale = Math.min(settings.maxScale, settings.maxLongEdgePx / contentWidth);
+  const lineHeight = medianLineHeight(layout.lines);
+  return lineHeight ? Math.min(widthScale, settings.targetLineHeightPx / lineHeight) : widthScale;
+}
+
 function planPageSegments(
   layout: PageLayout,
   blocked: readonly Interval[],
@@ -106,7 +119,7 @@ function planPageSegments(
   const bounds = contentBounds(layout, merged, settings.contentPaddingPt);
   const contentWidth = bounds.x1 - bounds.x0;
   if (contentWidth <= 0 || boxHeight(bounds) <= 0) return [];
-  const scale = Math.min(settings.maxScale, settings.maxLongEdgePx / contentWidth);
+  const scale = chooseScale(layout, contentWidth, settings);
   const widthPx = contentWidth * scale;
   const maxHeightPx = Math.min(settings.maxLongEdgePx, settings.maxPixels / widthPx);
   const maxHeight = maxHeightPx / scale;

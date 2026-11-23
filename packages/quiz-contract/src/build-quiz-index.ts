@@ -8,6 +8,7 @@ function summarizeQuiz(quiz: Quiz): QuizSummary {
     description: quiz.description ?? "",
     questionCount: quiz.questions.length,
     date: parseQuizTitle(quiz.title).date ?? quiz.updatedAt,
+    ...(quiz.section ? { section: quiz.section } : {}),
     tags: quiz.tags ?? [],
   };
 }

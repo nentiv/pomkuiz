@@ -63,6 +63,7 @@ const metaSchema = {
     id: { type: "string", maxLength: CONTRACT_LIMITS.slugCharacters },
     title: { type: "string", maxLength: CONTRACT_LIMITS.titleCharacters },
     description: { type: "string", maxLength: CONTRACT_LIMITS.descriptionCharacters },
+    section: { type: "string", maxLength: CONTRACT_LIMITS.sectionCharacters },
     tags: {
       type: "array",
       maxItems: CONTRACT_LIMITS.maxTags,

@@ -180,7 +180,8 @@ describe("site : passer un QCM, le quitter et le reprendre", () => {
     await chooseOption("0");
     await click(button(/^Terminer$/));
     expect(globalThis.location.hash).toMatch(/^#\/quiz\/demo\/results\//);
-    expect(container.querySelector(".results-percent")?.textContent).toMatch(/^67\s%$/);
+    expect(container.querySelector(".results-percent")?.textContent).toBe("13,33");
+    expect(container.querySelector(".results-hero .ring")?.textContent).toContain("sur 20");
     expect(container.textContent).toContain("2/3");
     expect(container.textContent).toContain("À 25 °C");
     expect(container.querySelectorAll(".review-item")).toHaveLength(3);
@@ -191,7 +192,11 @@ describe("site : passer un QCM, le quitter et le reprendre", () => {
     await goTo("#/");
     const dashboard = container.querySelector(".dashboard");
     expect(dashboard?.textContent).toContain("QCM terminés1 / 1");
-    expect(dashboard?.textContent).toMatch(/Note moyenne67\s%/);
+    const average = () => container.querySelectorAll(".dashboard .score-stat-value")[1]?.textContent;
+    expect(average()).toBe("13,33/20");
+    await click(container.querySelector<HTMLInputElement>("input[name='score-scale'][value='percent']")!);
+    expect(average()).toMatch(/^67\s%$/);
+    expect(localStorage.getItem("pomkuiz.v1.settings")).toContain('"scoreScale":"percent"');
     const row = container.querySelector(".quiz-row.tone-medium");
     expect(row?.textContent).toContain("Colle de démonstration");
     expect(

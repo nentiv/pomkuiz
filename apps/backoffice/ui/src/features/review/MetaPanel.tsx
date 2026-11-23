@@ -38,6 +38,10 @@ function MetaPanel({ meta, dispatch }: { meta: DraftMeta; dispatch: (action: Dra
           />
         </label>
         <label class="field wide">
+          <span>{messages.section}</span>
+          <input value={meta.section ?? ""} onInput={(event) => patch({ section: event.currentTarget.value })} />
+        </label>
+        <label class="field wide">
           <span>{messages.tags}</span>
           <input
             value={meta.tags.join(`${UI_CONFIG.tagSeparator} `)}

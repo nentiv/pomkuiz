@@ -17,6 +17,7 @@ interface SegmentedProps<T extends string> {
   onChange: (value: T) => void;
   iconOnly?: boolean;
   hideLegend?: boolean;
+  size?: "sm" | "md";
   class?: string;
 }
 
@@ -28,10 +29,13 @@ function Segmented<T extends string>({
   onChange,
   iconOnly = false,
   hideLegend = false,
+  size = "md",
   class: className,
 }: SegmentedProps<T>) {
   return (
-    <fieldset class={classNames("segmented", iconOnly && "segmented-icons", className)}>
+    <fieldset
+      class={classNames("segmented", iconOnly && "segmented-icons", size === "sm" && "segmented-sm", className)}
+    >
       <legend class={hideLegend ? "visually-hidden" : "segmented-legend"}>{legend}</legend>
       <div class="segmented-track">
         {options.map((option) => (

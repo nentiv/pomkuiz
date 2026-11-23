@@ -25,7 +25,13 @@ const question = (fields: Partial<DraftQuestion> = {}): DraftQuestion => ({
 });
 
 const content = (questions: DraftQuestion[]): DraftContent => ({
-  meta: { id: "", title: "Colle d'UE3 – Septembre", description: "", tags: [" chimie ", "chimie", ""] },
+  meta: {
+    id: "",
+    title: "Colle d'UE3 – Septembre",
+    description: "",
+    section: " QCM 26/27 ",
+    tags: [" chimie ", "chimie", ""],
+  },
   questions,
 });
 
@@ -40,6 +46,7 @@ describe("draft → quiz conversion", () => {
     expect(quiz.id).toBe("colle-d-ue3-septembre");
     expect(quiz.updatedAt).toBe("2026-09-21");
     expect(quiz.tags).toEqual(["chimie"]);
+    expect(quiz.section).toBe("QCM 26/27");
     expect(quiz.questions[0]).toEqual({
       id: "q1",
       type: "single",

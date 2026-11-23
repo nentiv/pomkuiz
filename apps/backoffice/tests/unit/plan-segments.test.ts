@@ -46,6 +46,29 @@ describe("segment planning", () => {
       expect((segment.y1 - segment.y0) * segment.scale).toBeLessThanOrEqual(maxHeightPx + 1);
   });
 
+  it("renders large print at a readable size so whole questions fit", () => {
+    const lineHeight = 18;
+    const questions = 15;
+    const spacing = 534;
+    const lines: TextLine[] = [];
+    for (let index = 0; index < questions; index += 1) {
+      const top = 40 + index * spacing;
+      lines.push({ text: `Question ${index + 1}`, x0: 40, x1: 140, y0: top, y1: top + lineHeight });
+      for (let row = 1; row <= 20; row += 1)
+        lines.push({ text: "Proposition", x0: 40, x1: 976, y0: top + row * 24, y1: top + row * 24 + lineHeight });
+    }
+    const layout: PageLayout = { index: 0, width: 1032, height: 40 + questions * spacing, lines, images: [] };
+    const segments = planPageSegments(layout, intervalsFromLayout(layout, patterns), settings);
+    expect(segments.length).toBeLessThan(questions);
+    expect(segments.every((segment) => !segment.forcedCut)).toBe(true);
+    for (const segment of segments)
+      expect(segment.scale * lineHeight).toBeLessThanOrEqual(settings.targetLineHeightPx + 0.001);
+    for (const segment of segments.slice(1)) {
+      const rows = segmentRows(layout.lines, segment, settings.rowToleranceRatio, settings.columnSeparator);
+      expect(rows[0]).toMatch(/^Question \d+$/);
+    }
+  });
+
   it("forces a cut when a block is taller than the limit", () => {
     const layout: PageLayout = {
       index: 0,

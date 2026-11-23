@@ -1,5 +1,6 @@
 import { href } from "../../app/hash-router.ts";
-import { formatDateTime, formatPercent } from "../../shared/formatters.ts";
+import { usePreferences } from "../../app/PreferencesProvider.tsx";
+import { formatDateTime, formatGrade } from "../../shared/formatters.ts";
 import { MESSAGES } from "../../shared/i18n/messages-fr.ts";
 import { Card, Icon, Pill, RevealListItem, SectionLabel } from "@pomkuiz/design-system";
 import { ArrowRight, Shuffle } from "@pomkuiz/design-system/icons";
@@ -8,11 +9,12 @@ import { scoreLevel } from "../results/scoring.ts";
 
 function AttemptOutcome({ attempt }: { attempt: Attempt }) {
   const messages = MESSAGES.quiz;
+  const { scoreScale } = usePreferences().settings;
   if (attempt.status === "in-progress") return <Pill tone="accent">{messages.statuses["in-progress"]}</Pill>;
   if (attempt.status === "abandoned" || !attempt.score) return <Pill>{messages.statuses[attempt.status]}</Pill>;
   return (
     <Pill tone={scoreLevel(attempt.score.normal / attempt.score.max)}>
-      {formatPercent(attempt.score.normal, attempt.score.max)}
+      {formatGrade(attempt.score.normal, attempt.score.max, scoreScale)}
     </Pill>
   );
 }

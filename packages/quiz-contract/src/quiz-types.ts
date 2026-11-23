@@ -26,6 +26,7 @@ interface Quiz {
   id: string;
   title: string;
   description?: string;
+  section?: string;
   tags?: string[];
   updatedAt: string;
   questions: Question[];
@@ -37,6 +38,7 @@ interface QuizSummary {
   description: string;
   questionCount: number;
   date: string;
+  section?: string;
   tags: string[];
 }
 

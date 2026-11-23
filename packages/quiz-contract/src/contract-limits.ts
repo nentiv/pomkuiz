@@ -2,6 +2,7 @@ const CONTRACT_LIMITS = Object.freeze({
   slugCharacters: 80,
   titleCharacters: 200,
   descriptionCharacters: 2000,
+  sectionCharacters: 80,
   tagCharacters: 40,
   maxTags: 20,
   richTextCharacters: 10000,

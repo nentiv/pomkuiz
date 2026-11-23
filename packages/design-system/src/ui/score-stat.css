@@ -5,6 +5,18 @@
   min-width: 0;
 }
 
+.score-stat-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.score-stat-action {
+  margin-left: auto;
+}
+
 .score-stat-value {
   font-size: var(--text-numeral);
   font-weight: var(--weight-black);

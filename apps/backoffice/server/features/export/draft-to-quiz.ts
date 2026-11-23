@@ -61,12 +61,14 @@ function convertQuestion(question: DraftQuestion, position: number, files: Asset
 function draftToQuiz(content: DraftContent, today: Date): { quiz: Quiz; files: AssetFile[] } {
   const files: AssetFile[] = [];
   const description = content.meta.description.trim();
+  const section = content.meta.section?.trim() ?? "";
   const tags = [...new Set(content.meta.tags.map((tag) => tag.trim()).filter(Boolean))];
   const quiz: Quiz = {
     schemaVersion: QUIZ_SCHEMA_VERSION,
     id: resolveQuizId(content),
     title: content.meta.title.trim(),
     ...(description ? { description } : {}),
+    ...(section ? { section } : {}),
     ...(tags.length > 0 ? { tags } : {}),
     updatedAt: localDate(today),
     questions: content.questions.map((question, index) => convertQuestion(question, index + 1, files)),
